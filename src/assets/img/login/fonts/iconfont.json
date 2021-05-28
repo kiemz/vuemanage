@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3789480",
+      "name": "太空",
+      "font_class": "tubiaozhizuomoban-",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "15433493",
+      "name": "密码机",
+      "font_class": "mimaji",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    }
+  ]
+}
