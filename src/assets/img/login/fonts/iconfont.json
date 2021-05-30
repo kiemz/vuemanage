@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "777845",
+      "name": "分类",
+      "font_class": "icon",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "3479827",
+      "name": "数据统计",
+      "font_class": "shujutongji",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
       "icon_id": "3789480",
       "name": "太空",
       "font_class": "tubiaozhizuomoban-",
@@ -13,11 +27,46 @@
       "unicode_decimal": 58886
     },
     {
+      "icon_id": "7738009",
+      "name": "权限管理",
+      "font_class": "quanxianguanli",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "11441207",
+      "name": "订单管理",
+      "font_class": "dingdanguanli",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "15433493",
       "name": "密码机",
       "font_class": "mimaji",
       "unicode": "e6ab",
       "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "15562251",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e785",
+      "unicode_decimal": 59269
+    },
+    {
+      "icon_id": "20402210",
+      "name": "折叠",
+      "font_class": "zhedie",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "21036623",
+      "name": "商品管理",
+      "font_class": "ziyuan83",
+      "unicode": "e610",
+      "unicode_decimal": 58896
     }
   ]
 }

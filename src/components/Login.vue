@@ -148,19 +148,11 @@ export default {
   justify-content: flex-end;
 }
 
-
-</style>
-<style>
-.el-input__inner{
-  background-color: transparent;
-}
 @media screen and (max-height: 812px) {
   .login_form{
     height: 75% !important;
   }
-  .el-input__inner{
-    height: 30px;
-  }
+  
   .el-button{
     width: 50px;
     height: 30px;
@@ -168,11 +160,22 @@ export default {
     line-height: 30px;
     font-size: 12px;
   }
-  .el-form-item__content{
-    margin-bottom: -10px;
-  }
   .el-button.is-round{
     padding: 0;
   }
 }
+</style>
+<style>
+.el-input__inner{
+  background-color: transparent;
+}
+@media screen and (max-height: 812px) {
+.el-input__inner{
+    height: 30px;
+  }
+.el-form-item__content{
+    margin-bottom: -10px;
+  }
+}
+
 </style>

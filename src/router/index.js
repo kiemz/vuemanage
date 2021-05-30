@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 // 懒加载
 const Login = () => import ('../components/Login.vue')
 const Home = () => import ('../components/Home.vue')
+const Welcome= () => import ('../components/Welcome.vue')
+const Users= () => import ('../components/user/Users.vue')
 
 
 Vue.use(VueRouter)
@@ -24,9 +26,23 @@ const routes = [
   {
     path:'/home',
     component: Home,
-    meta:{
-      title:'主页'
-    },
+    redirect: '/welcome',
+    children:[
+      {
+        path:'/welcome',
+        component: Welcome,
+        meta:{
+          title:'电商后台管理系统'
+        },
+      },
+      {
+        path:'/users',
+        component: Users,
+        meta:{
+          title:'用户管理'
+        },
+      },
+    ]
   },
 ]
 
@@ -41,11 +57,11 @@ router.beforeEach((to, from, next) => {
   // from 代表从哪个路径跳转而来
   // next 是一个函数，表示放行
   //     next()  放行    next('/login')  强制跳转
-
+  document.title=to.meta.title
+  window.sessionStorage.setItem("activePath",to.path)
   if (to.path === '/login') return next()
   // 获取token
   const tokenStr = window.sessionStorage.getItem('token')
-  if (!tokenStr) return next('/login')
   next()
 })
 
