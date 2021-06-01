@@ -94,7 +94,10 @@
 
     
     <!-- 修改用户的对话框 -->
-    <el-dialog title="修改用户" :visible.sync="editDialogVisible" width="50%" @close="editDialogClosed">
+    <el-dialog title="修改用户" 
+    :visible.sync="editDialogVisible" 
+    width="50%" 
+    @close="editDialogClosed">
       <el-form :model="editForm" :rules="editFormRules" ref="editFormRef" label-width="70px">
         <el-form-item label="用户名">
           <el-input v-model="editForm.username" disabled></el-input>
@@ -133,7 +136,7 @@
   </div>
 </template>
 
-<script>
+<script> 
 export default {
   name: 'Users',
   data() { 
@@ -198,7 +201,7 @@ export default {
           {
             min: 6,
             max: 15,
-            message: '用户名的长度在6~15个字符之间',
+            message: '密码的长度在6~15个字符之间',
             trigger: 'blur'
           }
         ],
@@ -256,7 +259,6 @@ export default {
       const { data: res } = await this.$http.get('users', {
         params: this.queryInfo
       })
-      
       if (res.meta.status !== 200) {
         return this.$message.error('获取用户列表失败！')
       }
@@ -314,7 +316,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('查询用户信息失败！')
       }
-
+    
       this.editForm = res.data
       this.editDialogVisible = true
     },
@@ -422,12 +424,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-breadcrumb{
-  margin-bottom: 15px;
-}
-.el-table{
-  margin-top: 15px;
-}
+
 .el-pagination{
   margin-top: 15px;
 }

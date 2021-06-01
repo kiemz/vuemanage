@@ -6,6 +6,8 @@ const Login = () => import ('../components/Login.vue')
 const Home = () => import ('../components/Home.vue')
 const Welcome= () => import ('../components/Welcome.vue')
 const Users= () => import ('../components/user/Users.vue')
+const Rights= () => import ('../components/power/Rights.vue')
+const Roles= () => import ('../components/power/Roles.vue')
 
 
 Vue.use(VueRouter)
@@ -40,6 +42,20 @@ const routes = [
         component: Users,
         meta:{
           title:'用户管理'
+        },
+      },
+      {
+        path:'/rights',
+        component: Rights,
+        meta:{
+          title:'权限管理'
+        },
+      },
+      {
+        path:'/roles',
+        component: Roles,
+        meta:{
+          title:'权限管理'
         },
       },
     ]
